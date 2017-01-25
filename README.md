@@ -17,6 +17,7 @@ For example:</br>
 ./boardPost ./myboard</br>
 
 <h2/>Functionality</h2>
+<h4>Board</h4>
 By running the board process a new board is created(or connected if it aldready exists) in the path which was given as an attribute. A board can have a lot of channels for 
 receiving files(the files are send throught named pipes).
 The files are then saved to the disk and the messages are printed to the stdin.
@@ -31,8 +32,8 @@ closes the client while the server is still running(I use fork to create a serve
 <li>shutdown</li>
 Terminates the server
 </lu>
-
-By running the boardPost process can connect with a board server and send files and messages.
+<h4>BoardPost</h4>
+By running the boardPost process the user is connected with a board server and can send files and messages throught the named pipes.
 Commands</br>
 <lu>
 <li>list </li>
