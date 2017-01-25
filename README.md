@@ -1,4 +1,5 @@
 <h1/>Bulletin Boards </h1>
+![alt tag](https://github.com/billDrett/Bulletin-Boards/blob/master/Diagram.png?raw=true)
 <h2/>Introduction </h2>
 A multi-process application with the use of named pipes and Low-Level I/O. Clients communicate with a server with named pipes and gives commands to write text, send files (etc images), create channels while others can read and download them. Also a bash script to monitors which processes of Bulletin Boards app are running and which have stoped. 
 <h2/>Compile</h2>
