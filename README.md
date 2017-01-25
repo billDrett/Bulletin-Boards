@@ -1,7 +1,6 @@
 <h1/>Bulletin Boards </h1>
 <h2/>Introduction </h2>
-A multi-process application with the use of named pipes and Low-Level I/O. Clients communicate with a server with named pipes and gives commands to write text, send files (etc images), create channels while others can read and download them. Also a bash script to monitors which processes of Bulletin Boards app are running and which have stoped. <h2/>Compile</h2>
-g++ -o theForum main.cpp admin.cpp admin.h forum.cpp forum.h moderator.cpp moderator.h person.cpp person.h post.cpp post.h registerUser.cpp registerUser.h system.cpp system.h thread.cpp thread.h 
+A multi-process application with the use of named pipes and Low-Level I/O. Clients communicate with a server with named pipes and gives commands to write text, send files (etc images), create channels while others can read and download them. Also a bash script to monitors which processes of Bulletin Boards app are running and which have stoped. 
 <h2/>Compile</h2>
  Make command to compile and make clean to remove all object files. 
 
@@ -17,20 +16,11 @@ To run the client </br>
 For example:</br>
 ./boardPost ./myboard</br>
 
-<h3/>Commands</h3>
-createchannel <id> <name>
-getmessages <id>
-exit
-shutdown
-
-list
-2. write <id> <message>
-3. send <id> <file>
 <h2/>Functionality</h2>
 By running the board process a new board is created(or connected if it aldready exists) in the path which was given as an attribute. A board can have a lot of channels for 
 receiving files(the files are send throught named pipes).
 The files are then saved to the disk and the messages are printed to the stdin.
-<h3/>Commands</h3>
+Commands</br>
 <lu>
 <li>createchannel id name </li>
 Creates a new chanel to the board with id being the identifier and the name of the channel.
@@ -43,7 +33,7 @@ Terminates the server
 </lu>
 
 By running the boardPost process can connect with a board server and send files and messages.
-<h3/>Commands</h3>
+Commands</br>
 <lu>
 <li>list </li>
 Prints all the available channels
